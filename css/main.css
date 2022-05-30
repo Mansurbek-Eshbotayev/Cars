@@ -70,7 +70,9 @@ font-size: 15px;
 padding: 11px 31px;
 background-color: 
 rgba(242, 242, 242, 1);
+border: 1px solid transparent;
 border-radius: 25px;
+transition: all 0.5s ease;
 }
 
 .cars__item-warning{
@@ -80,7 +82,14 @@ border-radius: 25px;
 }
 
 .cars__link-warning{
-  color: rgba(226, 134, 37, 1)            ;
+  color: rgba(226, 134, 37, 1);
+}
+
+.cars__link-warning:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: 1px solid 
+  rgba(255, 255, 255, 1);
 }
 
 .cars__item-warning::before{
@@ -104,6 +113,13 @@ border-radius: 25px;
 .cars__link-suvs{
   color: 
   rgba(0, 105, 113, 1);
+}
+
+.cars__link-suvs:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: 1px solid 
+  rgba(255, 255, 255, 1);
 }
 
 .cars__item-suvs::before{
@@ -130,6 +146,13 @@ z-index: 1;
 rgba(0, 65, 64, 1);
 }
 
+.cars__link-luxury:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: 1px solid 
+  rgba(255, 255, 255, 1);
+}
+
 .cars__item-luxury::before{
   content: "";
   width: 64px;
@@ -142,4 +165,5 @@ rgba(0, 65, 64, 1);
   top: 50px;
   left: 45px;
 }
+
 
