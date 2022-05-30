@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Display", "Lexend Deca", "Arial", "sans-serif";
+  background-color: azure;
+}
+
+.container{
+  width: 100%;
+  max-width: 920px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.cars{
+  margin-top: 100px;
+}
+
+.cars__nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cars__item{
+  width: 100%;
+  max-width: 306px;
+  border-radius: 8px;
+  padding: 123px 47.5px 48px 47.5px;
+}
+
+.cars__title{
+  margin: 0;
+  font-family: 'Big Shoulders Display';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-transform: uppercase;
+color: #F2F2F2;
+margin-bottom: 25px;
+}
+
+.cars__text{
+  font-family: 'Lexend Deca';
+  margin: 0;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.75;
+margin-bottom: 83px;
+}
+
+.cars__link{
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+padding: 11px 31px;
+background-color: 
+rgba(242, 242, 242, 1);
+border-radius: 25px;
+}
+
+.cars__item-warning{
+  background-color: 
+  rgba(226, 134, 37, 1);
+  position: relative;
+}
+
+.cars__link-warning{
+  color: rgba(226, 134, 37, 1)            ;
+}
+
+.cars__item-warning::before{
+  content: "";
+  width: 64px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../img/icon-sedan.svg);
+  background-repeat: no-repeat;
+  background-size:contain ;
+  top: 50px;
+  left: 45px;
+}
+
+.cars__item-suvs{
+  background-color: 
+  rgba(0, 105, 113, 1);
+  position: relative;
+}
+
+.cars__link-suvs{
+  color: 
+  rgba(0, 105, 113, 1);
+}
+
+.cars__item-suvs::before{
+  content: "";
+  width: 64px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../img/icon-suv.svg);
+  background-repeat: no-repeat;
+  background-size:contain ;
+  top: 50px;
+  left: 45px;
+}
+
+.cars__item-luxury{
+  background-color: 
+rgba(0, 65, 64, 1);
+position: relative;
+z-index: 1;
+}
+
+.cars__link-luxury{
+  color: 
+rgba(0, 65, 64, 1);
+}
+
+.cars__item-luxury::before{
+  content: "";
+  width: 64px;
+  height: 40px;
+  position: absolute;
+  background-image: url(../img/icon-luxury.svg);
+  background-repeat: no-repeat;
+  background-size:contain ;
+  z-index: 2;
+  top: 50px;
+  left: 45px;
+}
+
